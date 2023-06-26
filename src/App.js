@@ -97,7 +97,7 @@ function App() {
         <Header onClickCart={() => setCardOpened(true)} />
         <Routes>
           <Route
-            path=""
+            path="react-sneakers"
             element={
               <Home
                 searchValue={searchValue}
@@ -108,8 +108,8 @@ function App() {
             }
             exact
           />
-          <Route path="favorites" element={<Favorites />} exact />
-          <Route path="orders" element={<Orders />} exact />
+          <Route path="react-sneakers/favorites" element={<Favorites />} exact />
+          <Route path="react-sneakers/orders" element={<Orders />} exact />
         </Routes>
       </div>
     </AppContext.Provider>
